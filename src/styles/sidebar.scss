@@ -37,6 +37,10 @@
       height: 100%;
     }
 
+    .el-submenu__title i {
+      color: #fff;
+    }
+
     &.has-logo {
       .el-scrollbar {
         height: calc(100% - 50px);
@@ -88,6 +92,15 @@
       &:hover {
         background-color: $subMenuHover !important;
       }
+    }
+
+    // when menu active style
+    .router-link-active .el-menu-item.is-active {
+       background-color: $menuActiveBg !important;
+
+       .svg-icon {
+         color: $menuBg !important;
+       }
     }
   }
 
