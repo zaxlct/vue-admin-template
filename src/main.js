@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+import 'muse-ui-loading/dist/muse-ui-loading.css'; // load css
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
@@ -17,8 +17,10 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'element-ui'
+import Loading from 'muse-ui-loading';
 
 Vue.use(MuseUI)
+Vue.use(Loading)
 Vue.use(Button)
 Vue.use(Scrollbar)
 Vue.use(Menu)
