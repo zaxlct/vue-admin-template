@@ -1,7 +1,8 @@
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
-
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
 import {
   Button,
   Scrollbar,
@@ -12,8 +13,12 @@ import {
   Form,
   FormItem,
   Tooltip,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
 } from 'element-ui'
 
+Vue.use(MuseUI)
 Vue.use(Button)
 Vue.use(Scrollbar)
 Vue.use(Menu)
@@ -23,6 +28,9 @@ Vue.use(Input)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Tooltip)
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
 
 import '@/styles/index.scss' // global css
 

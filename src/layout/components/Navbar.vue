@@ -4,7 +4,25 @@
 
     <!-- <breadcrumb class="breadcrumb-container" /> -->
 
-    <div class="right-menu" />
+    <div class="right-menu">
+      <el-dropdown class="avatar-container" trigger="click">
+        <div class="avatar-wrapper">
+          <span>username</span>
+          <i class="el-icon-arrow-down" />
+        </div>
+        <el-dropdown-menu slot="dropdown" class="user-dropdown">
+          <router-link to="/">
+            <el-dropdown-item>
+              Home
+            </el-dropdown-item>
+          </router-link>
+          <el-dropdown-item divided @click.native="logout">
+            <span style="display:block;">Log Out</span>
+          </el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      <mu-button color="primary">Help</mu-button>
+    </div>
   </div>
 </template>
 
@@ -60,9 +78,12 @@ export default {
   }
 
   .right-menu {
+    margin-right: 20px;
     float: right;
     height: 100%;
     line-height: 50px;
+    display: flex;
+    align-items: center;
 
     &:focus {
       outline: none;
