@@ -1,3 +1,7 @@
+.el-submenu__title i {
+  color: #fff !important;
+}
+
 #app {
 
   .main-container {
@@ -35,10 +39,6 @@
 
     .el-scrollbar {
       height: 100%;
-    }
-
-    .el-submenu__title i {
-      color: #fff;
     }
 
     &.has-logo {
