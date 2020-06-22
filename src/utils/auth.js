@@ -1,13 +1,13 @@
 const TokenKey = 'vue_admin_template_token'
 
 export function getToken() {
-  return localStorage.TokenKey
+  return localStorage[TokenKey]
 }
 
 export function setToken(token) {
-  return localStorage.set(TokenKey, token)
+  return localStorage.setItem(TokenKey, token)
 }
 
 export function removeToken() {
-  return localStorage.remove(TokenKey)
+  return localStorage.removeItem(TokenKey)
 }
